@@ -194,7 +194,7 @@ class Email extends ViewableData
             case 'hex':
                 $encoded = '';
                 for ($x = 0; $x < strlen($email); $x++) {
-                    $encoded .= '&#x' . bin2hex($email{$x}) . ';';
+                    $encoded .= '&#x' . bin2hex($email[$x]) . ';';
                 }
 
                 return $encoded;
